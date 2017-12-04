@@ -22,7 +22,6 @@ public class DataTypeConverterTest {
     @Test
     public void should_getLong() {
         assertThat(DataTypeConverter.toSpark(BIGINT), Is.is(LongType));
-
     }
 
     @Test
@@ -37,38 +36,27 @@ public class DataTypeConverterTest {
 
     @Test
     public void should_to_spark() {
-
-//        System.out.println(StringType.getClass());
         assertThat(DataTypeConverter.toSpark(VARCHAR), Is.is(StringType));
     }
 
     @Test
     public void should_to_spark_1() {
-
-//        System.out.println(StringType.getClass());
         assertThat(DataTypeConverter.toSpark(INTEGER), Is.is(IntegerType));
     }
 
     @Test
     public void should_to_spark_2() {
-
         assertThat(DataTypeConverter.toSpark(SMALLINT), Is.is(ShortType));
         assertThat(DataTypeConverter.toSpark(TINYINT), Is.is(ByteType));
     }
 
     @Test
     public void should_to_spark_3() {
-
-//        System.out.println(DataType.fromJson("\"Short\""));
-//        System.out.println(DataType.fromJson("\"smallint\""));
-//        System.out.println(DataType.fromJson("\"short\""));
         System.out.println(DataType.fromJson("\"byte\""));
     }
 
     @Test
     public void should_to_jdbc_1() {
-
-//        System.out.println(StringType.getClass());
         assertThat(DataTypeConverter.toJDBCType(IntegerType), Is.is(INTEGER));
         assertThat(DataTypeConverter.toJDBCType(ShortType), Is.is(SMALLINT));
         assertThat(DataTypeConverter.toJDBCType(ByteType), Is.is(TINYINT));

@@ -1,7 +1,7 @@
 package cn.maxinyue.metadata.management.tools;
 
+import cn.maxinyue.core.config.DatabaseConfiguration;
 import cn.maxinyue.metadata.management.domain.Element;
-import com.bjtuling.core.config.DatabaseConfiguration;
 import cn.maxinyue.metadata.management.domain.Schema;
 import com.google.common.base.Strings;
 import org.slf4j.Logger;

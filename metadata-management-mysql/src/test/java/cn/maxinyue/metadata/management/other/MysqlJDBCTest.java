@@ -1,7 +1,7 @@
 package cn.maxinyue.metadata.management.other;
 
-import com.bjtuling.core.config.Configuration;
-import com.bjtuling.core.config.DatabaseConfiguration;
+import cn.maxinyue.core.config.Configuration;
+import cn.maxinyue.core.config.DatabaseConfiguration;
 import org.junit.Test;
 
 import java.sql.Connection;

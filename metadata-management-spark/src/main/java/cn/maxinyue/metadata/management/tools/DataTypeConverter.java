@@ -37,7 +37,6 @@ public class DataTypeConverter {
         DataType dataType = null;
         try {
             dataType = DataType.fromJson("\"" + type.toLowerCase() + "\"");
-//            dataType = (DataType) Utils.classForName("org.apache.spark.sql.types." + type).newInstance();
         } catch (Throwable e) {
             logger.error("toSpark:" + jdbcType + " error!", e);
         }

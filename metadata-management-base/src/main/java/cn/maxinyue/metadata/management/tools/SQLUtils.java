@@ -1,6 +1,6 @@
 package cn.maxinyue.metadata.management.tools;
 
-import com.bjtuling.core.config.DatabaseConfiguration;
+import cn.maxinyue.core.config.DatabaseConfiguration;
 import cn.maxinyue.metadata.management.domain.Schema;
 
 import java.util.List;

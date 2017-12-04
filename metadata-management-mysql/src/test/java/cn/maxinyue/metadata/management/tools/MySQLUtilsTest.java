@@ -7,7 +7,7 @@ import org.junit.Test;
 import java.io.IOException;
 import java.util.List;
 
-import static com.bjtuling.core.config.Configuration.getDefaultConfiguration;
+import static cn.maxinyue.core.config.Configuration.getDefaultConfiguration;
 
 /**
  * Created by obama on 2017/4/24.

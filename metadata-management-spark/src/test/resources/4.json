@@ -1,0 +1,1563 @@
+[
+  {
+    "name": "ods_archive",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "input_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "建档时间时间维度的log_date"
+      },
+      {
+        "name": "zone_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构对应区划id"
+      },
+      {
+        "name": "service_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构id区划机构维id"
+      },
+      {
+        "name": "assit_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "协作机构id区划机构维id"
+      },
+      {
+        "name": "followup_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "随访机构id区划机构维id"
+      },
+      {
+        "name": "followup_zone_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "随访区划维id"
+      },
+      {
+        "name": "data_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "数据标识"
+      },
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "档案id"
+      },
+      {
+        "name": "archive_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "档案编号"
+      },
+      {
+        "name": "dim_archive_info_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "档案信息维度id"
+      },
+      {
+        "name": "alter_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "最后修改时间时间维度log_date"
+      },
+      {
+        "name": "update_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "最后更新时间时间维度log_date"
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "是否删除"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "province,create_date",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "ods_evaluation_advice",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "create_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "建档时间,时间维度的log_date"
+      },
+      {
+        "name": "zone_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构对应区划id"
+      },
+      {
+        "name": "service_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构id，区划机构维id"
+      },
+      {
+        "name": "assit_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "协作机构id，区划机构维id"
+      },
+      {
+        "name": "followup_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "随访机构id，区划机构维id"
+      },
+      {
+        "name": "archive_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "档案id"
+      },
+      {
+        "name": "data_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "数据标识"
+      },
+      {
+        "name": "informed_consent_signed",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "知情同意书签署情况"
+      },
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "风评建议书id"
+      },
+      {
+        "name": "province_eva_over_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "评估逾期时间"
+      },
+      {
+        "name": "country_eva_over_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "国家标准评估逾期时间"
+      },
+      {
+        "name": "eva_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "评估时间"
+      },
+      {
+        "name": "province_is_over_date",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "省份标准是否逾期"
+      },
+      {
+        "name": "country_is_over_date",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "国家标准是否逾期"
+      },
+      {
+        "name": "eva_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "评估机构，区划机构维id"
+      },
+      {
+        "name": "risk_result",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "风险评估结果"
+      },
+      {
+        "name": "risk_population",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "风险人群"
+      },
+      {
+        "name": "sys_advice",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "系统建议"
+      },
+      {
+        "name": "is_complete",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "是否完成"
+      },
+      {
+        "name": "update_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "最后更新时间，时间维度log_date"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "province,create_date",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "ods_early_visit_master",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "create_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "建档时间,时间维度的log_date"
+      },
+      {
+        "name": "zone_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构对应区划id"
+      },
+      {
+        "name": "service_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构id，区划机构维id"
+      },
+      {
+        "name": "assit_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "协作机构id，区划机构维id"
+      },
+      {
+        "name": "followup_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "随访机构id，区划机构维id"
+      },
+      {
+        "name": "archive_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "档案id"
+      },
+      {
+        "name": "data_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "数据标识"
+      },
+      {
+        "name": "dim_early_info_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "早孕随访维度id"
+      },
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "list_info的id"
+      },
+      {
+        "name": "eva_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "评估日期"
+      },
+      {
+        "name": "early_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "早孕随访日期"
+      },
+      {
+        "name": "province_early_over_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "早孕逾期时间"
+      },
+      {
+        "name": "country_early_over_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "国家标准早孕逾期时间"
+      },
+      {
+        "name": "early_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "早孕随访机构"
+      },
+      {
+        "name": "update_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "最后更新时间，时间维度log_date"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "province,create_date",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "ods_early_visit_slave",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "create_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "建档时间,时间维度的log_date"
+      },
+      {
+        "name": "zone_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构对应区划id"
+      },
+      {
+        "name": "service_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构id，区划机构维id"
+      },
+      {
+        "name": "assit_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "协作机构id，区划机构维id"
+      },
+      {
+        "name": "followup_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "随访机构id，区划机构维id"
+      },
+      {
+        "name": "archive_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "档案id"
+      },
+      {
+        "name": "data_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "数据标识"
+      },
+      {
+        "name": "dim_early_info_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "早孕随访维度id"
+      },
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "主键id"
+      },
+      {
+        "name": "eva_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "风险评估日期"
+      },
+      {
+        "name": "input_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "随访日期"
+      },
+      {
+        "name": "early_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "随访机构"
+      },
+      {
+        "name": "update_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "最后更新时间，时间维度log_date"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "province,create_date",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "ods_pregnancy_visit_master",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "create_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "建档时间,时间维度的log_date"
+      },
+      {
+        "name": "zone_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构对应区划id"
+      },
+      {
+        "name": "service_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构id，区划机构维id"
+      },
+      {
+        "name": "assit_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "协作机构id，区划机构维id"
+      },
+      {
+        "name": "followup_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "预期随访机构id，区划机构维id"
+      },
+      {
+        "name": "archive_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "档案id"
+      },
+      {
+        "name": "data_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "数据标识"
+      },
+      {
+        "name": "preg_info_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "妊娠结局维度id"
+      },
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "list_info的id"
+      },
+      {
+        "name": "early_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "早孕随访日期"
+      },
+      {
+        "name": "preg_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "妊娠随访日期"
+      },
+      {
+        "name": "province_over_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "妊娠逾期时间"
+      },
+      {
+        "name": "country_over_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "国家标准妊娠逾期时间"
+      },
+      {
+        "name": "preg_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "妊娠随访机构"
+      },
+      {
+        "name": "update_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "最后更新时间，时间维度log_date"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "province,create_date",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "ods_pregnancy_visit_slave",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "create_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "建档时间,时间维度的log_date"
+      },
+      {
+        "name": "zone_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构对应区划id"
+      },
+      {
+        "name": "service_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构id，区划机构维id"
+      },
+      {
+        "name": "assit_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "协作机构id，区划机构维id"
+      },
+      {
+        "name": "followup_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "预期随访机构id，区划机构维id"
+      },
+      {
+        "name": "archive_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "档案id"
+      },
+      {
+        "name": "data_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "数据标识"
+      },
+      {
+        "name": "preg_info_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "妊娠结局维度id"
+      },
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "主键"
+      },
+      {
+        "name": "early_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "早孕随访日期"
+      },
+      {
+        "name": "preg_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "妊娠随访日期"
+      },
+      {
+        "name": "preg_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "妊娠随访机构"
+      },
+      {
+        "name": "update_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "最后更新时间，时间维度log_date"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "province,create_date",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "ods_baby_situation",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "create_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "建档时间,时间维度的log_date"
+      },
+      {
+        "name": "zone_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构对应区划id"
+      },
+      {
+        "name": "service_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构id，区划机构维id"
+      },
+      {
+        "name": "assit_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "协作机构id，区划机构维id"
+      },
+      {
+        "name": "followup_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "随访机构id，区划机构维id"
+      },
+      {
+        "name": "archive_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "档案id"
+      },
+      {
+        "name": "data_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "数据标识"
+      },
+      {
+        "name": "dim_baby_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "婴儿维度id"
+      },
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "婴儿id"
+      },
+      {
+        "name": "preg_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "妊娠结局随访时间"
+      },
+      {
+        "name": "input_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "填写日期"
+      },
+      {
+        "name": "birth_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "出生日期"
+      },
+      {
+        "name": "is_complete",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "完成状态"
+      },
+      {
+        "name": "update_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "最后更新时间，时间维度log_date"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "province,create_date",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "ods_gene",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "create_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "建档时间,时间维度的log_date"
+      },
+      {
+        "name": "zone_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构对应区划id"
+      },
+      {
+        "name": "service_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构id，区划机构维id"
+      },
+      {
+        "name": "assit_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "协作机构id，区划机构维id"
+      },
+      {
+        "name": "followup_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "随访机构id，区划机构维id"
+      },
+      {
+        "name": "archive_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "档案id"
+      },
+      {
+        "name": "data_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "数据标识"
+      },
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "基因检查id"
+      },
+      {
+        "name": "gender",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "性别"
+      },
+      {
+        "name": "input_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "检查日期"
+      },
+      {
+        "name": "exam_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "检查机构，区划机构维id"
+      },
+      {
+        "name": "a_is_normal",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "a基因检查结果"
+      },
+      {
+        "name": "b_is_normal",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "b基因检查结果"
+      },
+      {
+        "name": "is_complete",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "完成状态"
+      },
+      {
+        "name": "update_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "最后更新时间，时间维度log_date"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "province,create_date",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "ods_hemoglobin",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "create_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "建档时间,时间维度的log_date"
+      },
+      {
+        "name": "zone_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构对应区划id"
+      },
+      {
+        "name": "service_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构id，区划机构维id"
+      },
+      {
+        "name": "assit_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "协作机构id，区划机构维id"
+      },
+      {
+        "name": "followup_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "随访机构id，区划机构维id"
+      },
+      {
+        "name": "archive_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "档案id"
+      },
+      {
+        "name": "data_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "数据标识"
+      },
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "血红蛋白检查id"
+      },
+      {
+        "name": "gender",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "性别"
+      },
+      {
+        "name": "input_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "检查日期"
+      },
+      {
+        "name": "exam_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "检查机构，区划机构维id"
+      },
+      {
+        "name": "is_check",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "是否基因检查"
+      },
+      {
+        "name": "is_normal",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "血红蛋白结果是否正常"
+      },
+      {
+        "name": "is_complete",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "完成状态"
+      },
+      {
+        "name": "update_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "最后更新时间，时间维度log_date"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "province,create_date",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "ods_wife_b_value",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "create_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "建档时间,时间维度的log_date"
+      },
+      {
+        "name": "zone_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构对应区划id"
+      },
+      {
+        "name": "service_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构id，区划机构维id"
+      },
+      {
+        "name": "assit_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "协作机构id，区划机构维id"
+      },
+      {
+        "name": "followup_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "随访机构id，区划机构维id"
+      },
+      {
+        "name": "archive_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "档案id"
+      },
+      {
+        "name": "data_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "数据标识"
+      },
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "B超检查id"
+      },
+      {
+        "name": "input_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "检查日期"
+      },
+      {
+        "name": "exam_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "检查机构，区划机构维id"
+      },
+      {
+        "name": "check_value",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "检查情况"
+      },
+      {
+        "name": "is_normal",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "B超检查是否正常"
+      },
+      {
+        "name": "is_complete",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "完成状态"
+      },
+      {
+        "name": "update_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "最后更新时间，时间维度log_date"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "province,create_date",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "ods_hus_dis_history",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "service_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构id，区划机构维id"
+      },
+      {
+        "name": "assit_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "协作机构id，区划机构维id"
+      },
+      {
+        "name": "followup_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "随访机构id，区划机构维id"
+      },
+      {
+        "name": "archive_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "档案id"
+      },
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "丈夫一般情况id"
+      },
+      {
+        "name": "data_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "数据标识"
+      },
+      {
+        "name": "input_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "询问日期"
+      },
+      {
+        "name": "eva_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "评估日期"
+      },
+      {
+        "name": "is_normal",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "是否正常"
+      },
+      {
+        "name": "update_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "最后更新时间，时间维度log_date"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "province,create_date",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "ods_wife_dis_history",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "service_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构id，区划机构维id"
+      },
+      {
+        "name": "assit_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "协作机构id，区划机构维id"
+      },
+      {
+        "name": "followup_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "随访机构id，区划机构维id"
+      },
+      {
+        "name": "archive_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "档案id"
+      },
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "妻子一般情况id"
+      },
+      {
+        "name": "data_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "数据标识"
+      },
+      {
+        "name": "input_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "询问日期"
+      },
+      {
+        "name": "eva_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "评估日期"
+      },
+      {
+        "name": "is_normal",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "是否正常"
+      },
+      {
+        "name": "update_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "最后更新时间，时间维度log_date"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "province,create_date",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "ods_basic_info",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "create_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "建档时间,时间维度的log_date"
+      },
+      {
+        "name": "zone_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构对应区划id"
+      },
+      {
+        "name": "service_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构id，区划机构维id"
+      },
+      {
+        "name": "assit_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "协作机构id，区划机构维id"
+      },
+      {
+        "name": "followup_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "随访机构id，区划机构维id"
+      },
+      {
+        "name": "archive_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "档案id"
+      },
+      {
+        "name": "data_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "数据标识"
+      },
+      {
+        "name": "dim_persion_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "人信息维"
+      },
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "人员信息id"
+      },
+      {
+        "name": "is_complete",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "完成状态"
+      },
+      {
+        "name": "update_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "最后更新时间，时间维度log_date"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "province,create_date",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "ods_exam_item_value",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [],
+    "properties": {
+      "PARTITION_BY": "province,create_date",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "ods_common_check",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "create_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "建档时间,时间维度的log_date"
+      },
+      {
+        "name": "service_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构id，区划机构维id"
+      },
+      {
+        "name": "assit_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "协作机构id，区划机构维id"
+      },
+      {
+        "name": "followup_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "随访机构id，区划机构维id"
+      },
+      {
+        "name": "archive_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "档案id"
+      },
+      {
+        "name": "data_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "数据标识"
+      },
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "体格检查id"
+      },
+      {
+        "name": "gender",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "性别"
+      },
+      {
+        "name": "is_normal",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "是否正常"
+      },
+      {
+        "name": "eva_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "评估日期"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "province,create_date",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "ods_reproductive_check",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "create_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "建档时间,时间维度的log_date"
+      },
+      {
+        "name": "service_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构id，区划机构维id"
+      },
+      {
+        "name": "assit_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "协作机构id，区划机构维id"
+      },
+      {
+        "name": "followup_org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "随访机构id，区划机构维id"
+      },
+      {
+        "name": "archive_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "档案id"
+      },
+      {
+        "name": "data_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "数据标识"
+      },
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "生殖系统检查id"
+      },
+      {
+        "name": "gender",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "性别"
+      },
+      {
+        "name": "is_normal",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "是否正常"
+      },
+      {
+        "name": "eva_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "评估日期"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "province,create_date",
+      "FILE_FORMAT": "parquet"
+    }
+  }
+]

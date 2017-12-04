@@ -1,0 +1,2333 @@
+[
+  {
+    "name": "stat_archive_quality",
+    "domain": null,
+    "version": null,
+    "elements": [
+      {
+        "name": "create_month",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 7,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "zone_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "conuty_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "zone_tag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_poor_county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_all_cover",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "org_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "org_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_attribute",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "data_flag",
+        "type": "CHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "create_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "alter_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "province_eva_overdue_unwrite_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "province_eva_overdue_uncomplete_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "country_eva_overdue_unwrite_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "country_eva_overdue_uncomplete_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "eva_complete_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "eva_uncomplete_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      }
+    ]
+  },
+  {
+    "name": "stat_baby_situation",
+    "domain": null,
+    "version": null,
+    "elements": [
+      {
+        "name": "input_month",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 7,
+        "comment": null
+      },
+      {
+        "name": "input_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "zone_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "conuty_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "zone_tag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_poor_county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_all_cover",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "org_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "org_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_attribute",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "complete_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "uncomplete_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "defect_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "total",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      }
+    ]
+  },
+  {
+    "name": "stat_check_count",
+    "domain": null,
+    "version": null,
+    "elements": [
+      {
+        "name": "eva_month",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 7,
+        "comment": null
+      },
+      {
+        "name": "eva_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "zone_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "conuty_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "zone_tag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_poor_county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_all_cover",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "org_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "org_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_attribute",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "male_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "female_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      }
+    ]
+  },
+  {
+    "name": "stat_check_item_exam",
+    "domain": null,
+    "version": null,
+    "elements": [
+      {
+        "name": "eva_month",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 7,
+        "comment": null
+      },
+      {
+        "name": "eva_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "zone_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "conuty_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "zone_tag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_poor_county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_all_cover",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "org_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "org_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_attribute",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "item_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "item_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "item_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "item_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "all_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "all_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "male_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "female_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "male_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "female_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "male_abnormal_archives",
+        "type": "LONGVARCHAR",
+        "limitations": {},
+        "length": 2147483647,
+        "comment": null
+      },
+      {
+        "name": "female_abnormal_archives",
+        "type": "LONGVARCHAR",
+        "limitations": {},
+        "length": 2147483647,
+        "comment": null
+      }
+    ]
+  },
+  {
+    "name": "stat_early_visit",
+    "domain": null,
+    "version": null,
+    "elements": [
+      {
+        "name": "eva_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "eva_month",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 7,
+        "comment": null
+      },
+      {
+        "name": "zone_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "conuty_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "zone_tag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_poor_county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_all_cover",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "org_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "org_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_attribute",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "early_uncomplete_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "early_uncreate_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "province_early_overdue_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "country_early_overdue_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "early_complete_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "province_early_overdue_uncomplete_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "country_early_overdue_uncomplete_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "early_islost_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "eva_complete_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      }
+    ]
+  },
+  {
+    "name": "stat_gene_exam",
+    "domain": null,
+    "version": null,
+    "elements": [
+      {
+        "name": "eva_month",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 7,
+        "comment": null
+      },
+      {
+        "name": "eva_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "zone_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "conuty_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "zone_tag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_poor_county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_all_cover",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "org_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "org_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_attribute",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "all_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "all_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "all_a_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "all_b_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "a_female_b_male_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "b_female_a_male_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "female_normal_male_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "female_abnormal_male_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      }
+    ]
+  },
+  {
+    "name": "stat_hemoglobin_exam",
+    "domain": null,
+    "version": null,
+    "elements": [
+      {
+        "name": "eva_month",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 7,
+        "comment": null
+      },
+      {
+        "name": "eva_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "zone_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "conuty_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "zone_tag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_poor_county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_all_cover",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "org_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "org_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_attribute",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "all_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "all_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "male_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "female_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "male_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "female_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      }
+    ]
+  },
+  {
+    "name": "stat_pregnancy_month_report",
+    "domain": null,
+    "version": null,
+    "elements": [
+      {
+        "name": "preg_month",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 7,
+        "comment": null
+      },
+      {
+        "name": "zone_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "conuty_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "zone_tag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_poor_county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_all_cover",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "org_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "org_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_attribute",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "data_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "male_birth_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "female_birth_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "birth_early_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "birth_low_weight_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "male_birth_defect_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "female_birth_defect_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "birth_deformity_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "birth_unknown_sex_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "normal_abortion_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "artificial_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "treat_abortion_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "ectopic_pre_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "dead_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "other_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      }
+    ]
+  },
+  {
+    "name": "stat_pregnancy_visit",
+    "domain": null,
+    "version": null,
+    "elements": [
+      {
+        "name": "early_month",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 7,
+        "comment": null
+      },
+      {
+        "name": "early_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "zone_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "conuty_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "zone_tag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_poor_county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_all_cover",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "org_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "org_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_attribute",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "preg_complete_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "preg_uncomplete_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "preg_uncreate_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "province_preg_overdue_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "country_preg_overdue_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "province_preg_overdue_uncomplete_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "country_preg_overdue_uncomplete_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "preg_islost_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "need_visit_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      }
+    ]
+  },
+  {
+    "name": "stat_service_month_report",
+    "domain": null,
+    "version": null,
+    "elements": [
+      {
+        "name": "stat_month",
+        "type": "DATE",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "zone_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "conuty_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "zone_tag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_poor_county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_all_cover",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "org_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "org_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_attribute",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "data_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "plan_pregnancy_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "male_check_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "female_check_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "disease_his_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "disease_his_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "common_check_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "common_check_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "reproductive_check_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "reproductive_check_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "leucorrhea_check_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "leucorrhea_check_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "gonococcus_check_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "gonococcus_check_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "chlamydia_check_positive_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "chlamydia_check_negative_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "blood_check_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "blood_check_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "urine_check_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "urine_check_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "blood_type_check_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "blood_type_check_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "glucose_check_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "glucose_check_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "liver_check_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "liver_check_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "hepatitis_check_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "hepatitis_check_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "renal_check_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "renal_check_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "thyroid_check_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "thyroid_check_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "syphilis_check_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "syphilis_check_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "rubella_check_positive_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "rubella_check_negativel_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "lgm_check_positive_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "lgm_check_negative_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "lgg_check_positive_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "lgg_check_negative_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "bow_lgm_check_positive_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "bow_lgm_check_negative_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "bow_lgg_check_positive_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "bow_lgg_check_negative_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "ultrasound_check_normal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "ultrasound_check_abnormal_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "male_risk_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "female_risk_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "early_visit_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "pregnancy_visit_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      }
+    ]
+  }
+]

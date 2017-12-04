@@ -1,0 +1,77 @@
+[
+  {
+    "sparkType": "StringType",
+    "jdbcType": "VARCHAR",
+    "sqlType": "String"
+  },
+  {
+    "sparkType": "BinaryType",
+    "jdbcType": "BINARY",
+    "sqlType": "Binary"
+  },
+  {
+    "sparkType": "BooleanType",
+    "jdbcType": "BOOLEAN",
+    "sqlType": "Boolean"
+  },
+  {
+    "sparkType": "DateType",
+    "jdbcType": "DATE",
+    "sqlType": "Date"
+  },
+  {
+    "sparkType": "TimestampType",
+    "jdbcType": "TIMESTAMP",
+    "sqlType": "Timestamp"
+  },
+  {
+    "sparkType": "DoubleType",
+    "jdbcType": "DOUBLE",
+    "sqlType": "Double"
+  },
+  {
+    "sparkType": "FloatType",
+    "jdbcType": "FLOAT",
+    "sqlType": "Float"
+  },
+  {
+    "sparkType": "ByteType",
+    "jdbcType": "TINYINT",
+    "sqlType": "Byte"
+  },
+  {
+    "sparkType": "IntegerType",
+    "jdbcType": "INTEGER",
+    "sqlType": "Integer"
+  },
+  {
+    "sparkType": "LongType",
+    "jdbcType": "BIGINT",
+    "sqlType": "Long"
+  },
+  {
+    "sparkType": "NullType",
+    "jdbcType": "NULL",
+    "sqlType": "Null"
+  },
+  {
+    "sparkType": "ShortType",
+    "jdbcType": "SMALLINT",
+    "sqlType": "Short"
+  },
+  {
+    "sparkType": "StringType",
+    "jdbcType": "LONGVARCHAR",
+    "sqlType": "String"
+  },
+  {
+    "sparkType": "DecimalType",
+    "jdbcType": "DECIMAL",
+    "sqlType": "Decimal"
+  },
+  {
+    "sparkType": "FloatType",
+    "jdbcType": "REAL",
+    "sqlType": "Float"
+  }
+]

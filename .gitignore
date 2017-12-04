@@ -1,0 +1,12 @@
+**/*.iml
+**/*.ipr
+**/*.iws
+target/
+**/.DS_Store
+dependency-reduced-pom.xml
+/logs
+.idea
+derby.log
+metastore_db
+/metadata-management-mysql/logs/
+/metadata-management-spark/logs/

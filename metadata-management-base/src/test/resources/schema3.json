@@ -1,0 +1,217 @@
+{
+  "name": "stat_archive_quality",
+  "domain": null,
+  "version": null,
+  "elements": [
+    {
+      "name": "create_month",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 7,
+      "comment": null
+    },
+    {
+      "name": "create_date",
+      "type": "DATE",
+      "limitations": {},
+      "length": 10,
+      "comment": null
+    },
+    {
+      "name": "zone_code",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 50,
+      "comment": null
+    },
+    {
+      "name": "zone_name",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 50,
+      "comment": null
+    },
+    {
+      "name": "province",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 50,
+      "comment": null
+    },
+    {
+      "name": "province_code",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 50,
+      "comment": null
+    },
+    {
+      "name": "city",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 50,
+      "comment": null
+    },
+    {
+      "name": "city_code",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 50,
+      "comment": null
+    },
+    {
+      "name": "county",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 50,
+      "comment": null
+    },
+    {
+      "name": "conuty_code",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 50,
+      "comment": null
+    },
+    {
+      "name": "town",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 50,
+      "comment": null
+    },
+    {
+      "name": "town_code",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 50,
+      "comment": null
+    },
+    {
+      "name": "zone_level",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 2,
+      "comment": null
+    },
+    {
+      "name": "zone_tag",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 2,
+      "comment": null
+    },
+    {
+      "name": "is_poor_county",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 2,
+      "comment": null
+    },
+    {
+      "name": "is_all_cover",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 2,
+      "comment": null
+    },
+    {
+      "name": "org_id",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 32,
+      "comment": null
+    },
+    {
+      "name": "org_name",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 50,
+      "comment": null
+    },
+    {
+      "name": "org_level",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 2,
+      "comment": null
+    },
+    {
+      "name": "org_attribute",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 2,
+      "comment": null
+    },
+    {
+      "name": "data_flag",
+      "type": "CHAR",
+      "limitations": {},
+      "length": 1,
+      "comment": null
+    },
+    {
+      "name": "create_cnt",
+      "type": "BIGINT",
+      "limitations": {},
+      "length": 19,
+      "comment": null
+    },
+    {
+      "name": "alter_cnt",
+      "type": "BIGINT",
+      "limitations": {},
+      "length": 19,
+      "comment": null
+    },
+    {
+      "name": "del_cnt",
+      "type": "BIGINT",
+      "limitations": {},
+      "length": 19,
+      "comment": null
+    },
+    {
+      "name": "province_eva_overdue_unwrite_cnt",
+      "type": "BIGINT",
+      "limitations": {},
+      "length": 19,
+      "comment": null
+    },
+    {
+      "name": "province_eva_overdue_uncomplete_cnt",
+      "type": "BIGINT",
+      "limitations": {},
+      "length": 19,
+      "comment": null
+    },
+    {
+      "name": "country_eva_overdue_unwrite_cnt",
+      "type": "BIGINT",
+      "limitations": {},
+      "length": 19,
+      "comment": null
+    },
+    {
+      "name": "country_eva_overdue_uncomplete_cnt",
+      "type": "BIGINT",
+      "limitations": {},
+      "length": 19,
+      "comment": null
+    },
+    {
+      "name": "eva_complete_cnt",
+      "type": "BIGINT",
+      "limitations": {},
+      "length": 19,
+      "comment": null
+    },
+    {
+      "name": "eva_uncomplete_cnt",
+      "type": "BIGINT",
+      "limitations": {},
+      "length": 19,
+      "comment": null
+    }
+  ]
+}

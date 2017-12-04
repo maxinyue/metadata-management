@@ -1,0 +1,775 @@
+[
+  {
+    "name": "dim_date",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "log_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 0,
+        "comment": "年-月-日,例如2017-01-01，主键"
+      },
+      {
+        "name": "c_year",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "年，2017"
+      },
+      {
+        "name": "c_month",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "月,2017-01"
+      },
+      {
+        "name": "c_week",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "周,1"
+      },
+      {
+        "name": "c_week_desc",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "周,2017第1周"
+      },
+      {
+        "name": "c_quarter",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "Q1"
+      },
+      {
+        "name": "c_quarter_desc",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "季，2017第1季"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "######\ncreate table dim_date(\n  log_date date comment '年-月-日,例如2017-01-01，主键',\n  c_year string comment '年，2017',\n  c_month string comment '月,2017-01',\n  c_week string comment '周,1',\n  c_week_desc string comment '周,2017第1周',\n  c_quarter string comment 'Q1',\n  c_quarter_desc string comment '季，2017第1季'",
+      "COMMENT": "##########时间维度#######",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "dim_archive_info",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "维度ID,使用原有业务uuid或workid"
+      },
+      {
+        "name": "informed_consent_signed",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "知情同意书签署情况"
+      },
+      {
+        "name": "float_population",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "流动人口"
+      },
+      {
+        "name": "is_update",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "是否修改过"
+      },
+      {
+        "name": "resource",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "档案来源"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "信息维#######\ncreate table dim_archive_info(\nid string comment '维度ID,使用原有业务uuid或workid',\ninformed_consent_signed string comment '知情同意书签署情况',\nfloat_population string comment '流动人口',\nis_update string comment '是否修改过',\nresource string comment '档案来源'",
+      "COMMENT": "###########档案信息维#######",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "#区划维度#######\nCREATE TABLE dim_zone",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "维度ID,使用原有业务uuid或workid"
+      },
+      {
+        "name": "zone_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "区划编码"
+      },
+      {
+        "name": "zone_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "区划名称"
+      },
+      {
+        "name": "province",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "省名称"
+      },
+      {
+        "name": "province_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "省份编码"
+      },
+      {
+        "name": "city",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "城市名称"
+      },
+      {
+        "name": "city_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "城市编码"
+      },
+      {
+        "name": "county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "区县名称"
+      },
+      {
+        "name": "conuty_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "区县编码"
+      },
+      {
+        "name": "town",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "乡镇名称"
+      },
+      {
+        "name": "town_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "乡镇编码"
+      },
+      {
+        "name": "zone_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "区划级别"
+      },
+      {
+        "name": "zone_tag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "国家试点县"
+      },
+      {
+        "name": "is_poor_county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "是否贫困县"
+      },
+      {
+        "name": "is_all_cover",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "是否全口径覆盖"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "维度#######\nCREATE TABLE dim_zone (\n  id string comment '维度ID,使用原有业务uuid或workid',\n  zone_code string comment '区划编码',\n  zone_name string comment '区划名称',\n  province string comment '省名称',\n  province_code string comment '省份编码',\n  city string comment '城市名称',\n  city_code string comment '城市编码',\n  county string comment '区县名称',\n  conuty_code string comment '区县编码',\n  town string comment '乡镇名称',\n  town_code string comment '乡镇编码',\n  zone_level string comment '区划级别',\n  zone_tag string comment '国家试点县',\n  is_poor_county string comment '是否贫困县',\n  is_all_cover string comment '是否全口径覆盖'",
+      "COMMENT": "###########区划维度#######",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "dim_zone_organization",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "维度ID"
+      },
+      {
+        "name": "own_zone_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "所属区划编码"
+      },
+      {
+        "name": "own_zone_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "所属区划名称"
+      },
+      {
+        "name": "own_province",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "所属省名称"
+      },
+      {
+        "name": "own_province_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "所属省份编码"
+      },
+      {
+        "name": "own_city",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "所属城市名称"
+      },
+      {
+        "name": "own_city_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "所属城市编码"
+      },
+      {
+        "name": "own_county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "所属区县名称"
+      },
+      {
+        "name": "own_conuty_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "所属区县编码"
+      },
+      {
+        "name": "own_town",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "所属乡镇名称"
+      },
+      {
+        "name": "own_town_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "所属乡镇编码"
+      },
+      {
+        "name": "own_zone_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "所属区划级别"
+      },
+      {
+        "name": "own_zone_tag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "所属国家试点县"
+      },
+      {
+        "name": "own_is_poor_county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "所属是否贫困县"
+      },
+      {
+        "name": "own_is_all_cover",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "所属是否全口径覆盖"
+      },
+      {
+        "name": "zone_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "对应区划维度id"
+      },
+      {
+        "name": "zone_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "对应区划编码"
+      },
+      {
+        "name": "zone_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "对应区划名称"
+      },
+      {
+        "name": "province",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "对应省名称"
+      },
+      {
+        "name": "province_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "对应省份编码"
+      },
+      {
+        "name": "city",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "对应城市名称"
+      },
+      {
+        "name": "city_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "对应城市编码"
+      },
+      {
+        "name": "county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "对应区县名称"
+      },
+      {
+        "name": "conuty_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "对应区县编码"
+      },
+      {
+        "name": "town",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "对应乡镇名称"
+      },
+      {
+        "name": "town_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "对应乡镇编码"
+      },
+      {
+        "name": "zone_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "对应区划级别"
+      },
+      {
+        "name": "zone_tag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "对应国家试点县"
+      },
+      {
+        "name": "is_poor_county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "对应是否贫困县"
+      },
+      {
+        "name": "is_all_cover",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "对应是否全口径覆盖"
+      },
+      {
+        "name": "org_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "机构编码"
+      },
+      {
+        "name": "org_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "机构名称"
+      },
+      {
+        "name": "org_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "组织机构类型"
+      },
+      {
+        "name": "service_org_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构类型"
+      },
+      {
+        "name": "org_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "服务机构级别"
+      },
+      {
+        "name": "hospital_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "医院级别"
+      },
+      {
+        "name": "hospital_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "医院类别"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "###\ncreate table dim_zone_organization(\n  id string comment '维度ID',\n  own_zone_code string comment '所属区划编码',\n  own_zone_name string comment '所属区划名称',\n  own_province string comment '所属省名称',\n  own_province_code string comment '所属省份编码',\n  own_city string comment '所属城市名称',\n  own_city_code string comment '所属城市编码',\n  own_county string comment '所属区县名称',\n  own_conuty_code string comment '所属区县编码',\n  own_town string comment '所属乡镇名称',\n  own_town_code string comment '所属乡镇编码',\n  own_zone_level string comment '所属区划级别',\n  own_zone_tag string comment '所属国家试点县',\n  own_is_poor_county string comment '所属是否贫困县',\n  own_is_all_cover string comment '所属是否全口径覆盖',\n\n  zone_id string comment '对应区划维度id',\n  zone_code string comment '对应区划编码',\n  zone_name string comment '对应区划名称',\n  province string comment '对应省名称',\n  province_code string comment '对应省份编码',\n  city string comment '对应城市名称',\n  city_code string comment '对应城市编码',\n  county string comment '对应区县名称',\n  conuty_code string comment '对应区县编码',\n  town string comment '对应乡镇名称',\n  town_code string comment '对应乡镇编码',\n  zone_level string comment '对应区划级别',\n  zone_tag string comment '对应国家试点县',\n  is_poor_county string comment '对应是否贫困县',\n  is_all_cover string comment '对应是否全口径覆盖',\n\n  org_code string comment '机构编码',\n  org_name string comment '机构名称',\n  org_type string comment '组织机构类型',\n  service_org_type string comment '服务机构类型',\n  org_level string comment '服务机构级别',\n  hospital_level string comment '医院级别',\n  hospital_type string comment '医院类别'",
+      "COMMENT": "#####区划机构维度#####",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "dim_person_attribute",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "维度ID"
+      },
+      {
+        "name": "gender",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "性别"
+      },
+      {
+        "name": "education",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "文化程度"
+      },
+      {
+        "name": "account_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "户口性质"
+      },
+      {
+        "name": "occupation",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "职业类型"
+      },
+      {
+        "name": "is_marry",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "是否结婚"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "信息维######\ncreate table dim_person_attribute(\n  id string comment '维度ID',\n  gender string comment '性别',\n  education string comment '文化程度',\n  account_type string comment '户口性质',\n  occupation string comment '职业类型',\n  is_marry string comment '是否结婚'",
+      "COMMENT": "#######人基本属性信息维######",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "dim_pregnancy_info",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "维度ID"
+      },
+      {
+        "name": "delivery_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "分娩方式"
+      },
+      {
+        "name": "pre_result_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "妊娠结局结果"
+      },
+      {
+        "name": "followup_result",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "妊娠随访结果"
+      },
+      {
+        "name": "is_birth_defective",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "是否出生缺陷"
+      },
+      {
+        "name": "data_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "数据标识"
+      },
+      {
+        "name": "is_complete",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "完成状态"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "###\ncreate table dim_pregnancy_info(\n  id string comment '维度ID',\n  delivery_type string comment '分娩方式',\n  pre_result_type string comment '妊娠结局结果',\n  followup_result string comment '妊娠随访结果',\n  is_birth_defective string comment '是否出生缺陷',\n  data_flag string comment '数据标识',\n  is_complete string comment '完成状态'",
+      "COMMENT": "#####妊娠结局信息维####",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "dim_early_info",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": null,
+        "limitations": {},
+        "length": 0,
+        "comment": "维度ID"
+      },
+      {
+        "name": "early_followup_result",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "早孕随访结果"
+      },
+      {
+        "name": "data_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "数据标识"
+      },
+      {
+        "name": "is_complete",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "完成状态"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "####\ncreate table dim_early_info(\n  id  string  comment '维度ID',\n  early_followup_result string comment '早孕随访结果',\n  data_flag string comment '数据标识',\n  is_complete string comment '完成状态'",
+      "COMMENT": "#####早孕随访信息维#####",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "dim_exam_item",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "维度id"
+      },
+      {
+        "name": "item_level",
+        "type": null,
+        "limitations": {},
+        "length": 0,
+        "comment": "项目级别，1父类，2子类"
+      },
+      {
+        "name": "item_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "项目类型"
+      },
+      {
+        "name": "item_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "项目编码"
+      },
+      {
+        "name": "item_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "项目名称"
+      },
+      {
+        "name": "gender",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "性别"
+      },
+      {
+        "name": "is_normal",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "正常or异常"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "####\ncreate table dim_exam_item(\n  id string comment '维度id',\n  item_level int comment '项目级别，1父类，2子类',\n  item_type string comment '项目类型',\n  item_code string comment '项目编码',\n  item_name string comment '项目名称',\n  gender string comment '性别',\n  is_normal string comment '正常or异常'",
+      "COMMENT": "#####检查项目维######",
+      "FILE_FORMAT": "parquet"
+    }
+  },
+  {
+    "name": "dim_baby_situation",
+    "domain": "jgxt_dw",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 0,
+        "comment": "维度id"
+      },
+      {
+        "name": "gender",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "性别"
+      },
+      {
+        "name": "is_birth_defective",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "是否出生缺陷"
+      },
+      {
+        "name": "baby_42day_survival_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "42天存活状态"
+      },
+      {
+        "name": "preg_result_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "妊娠结局结果"
+      },
+      {
+        "name": "is_complete",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "完成状态"
+      },
+      {
+        "name": "is_low_weight",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 0,
+        "comment": "是否出生低体重"
+      }
+    ],
+    "properties": {
+      "PARTITION_BY": "#####\ncreate table dim_baby_situation(\n  id long comment '维度id',\n  gender string comment '性别',\n  is_birth_defective string comment '是否出生缺陷',\n  baby_42day_survival_type string comment '42天存活状态',\n  preg_result_type string comment '妊娠结局结果',\n  is_complete string comment '完成状态',\n  is_low_weight string comment '是否出生低体重'",
+      "COMMENT": "###### 婴儿信息维######",
+      "FILE_FORMAT": "parquet"
+    }
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "name": "hehe",
+  "domain": "db1",
+  "elements": [
+    {
+      "name": "id",
+      "type": "INTEGER",
+      "comment": "主键id"
+    },
+    {
+      "name": "name",
+      "type": "VARCHAR",
+      "comment": "名字",
+      "length": 50
+    },
+    {
+      "name": "age",
+      "type": "INTEGER",
+      "comment": "年龄",
+      "limitations": {
+        "default": 18
+      }
+    }
+  ]
+}

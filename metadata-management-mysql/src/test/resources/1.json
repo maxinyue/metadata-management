@@ -1,0 +1,3482 @@
+[
+  {
+    "name": "aux_exam_range",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "item_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "item_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "min_value",
+        "type": "DECIMAL",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "max_value",
+        "type": "DECIMAL",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "start_time",
+        "type": "DATE",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "valuescope",
+        "type": "TINYINT",
+        "limitations": {},
+        "length": 3,
+        "comment": null
+      },
+      {
+        "name": "own_org",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "set_org",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "own_org_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "set_org_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "busi_archive_update",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "table_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "description",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2000,
+        "comment": null
+      },
+      {
+        "name": "update_time",
+        "type": "INTEGER",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "delete_time",
+        "type": "INTEGER",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "insert_time",
+        "type": "INTEGER",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "own_organization_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "set_organization_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "start_time",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "expired_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "busi_audit",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "service_url",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 100,
+        "comment": null
+      },
+      {
+        "name": "report_status",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "audit_user",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "audit_time",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "audit_status",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "audit_opinion",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 255,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "busi_bulletin",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "note",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2000,
+        "comment": null
+      },
+      {
+        "name": "publish_user_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "publish_user_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "publish_time",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "receive_org",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2000,
+        "comment": null
+      },
+      {
+        "name": "receive_roles",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2000,
+        "comment": null
+      },
+      {
+        "name": "publish_roles",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "istop",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "busi_bulletin_user_view",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "user_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "bulletin_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "busi_exam_template",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "own_organization_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "set_organization_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "item_codes_male",
+        "type": "LONGVARCHAR",
+        "limitations": {},
+        "length": 65535,
+        "comment": null
+      },
+      {
+        "name": "item_codes_female",
+        "type": "LONGVARCHAR",
+        "limitations": {},
+        "length": 65535,
+        "comment": null
+      },
+      {
+        "name": "type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "expired_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "started_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "is_enable",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "busi_file",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "bulletin_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "file_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 100,
+        "comment": null
+      },
+      {
+        "name": "file_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "busi_overdue",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "file_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "description",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2000,
+        "comment": null
+      },
+      {
+        "name": "overdue_remind_time",
+        "type": "TINYINT",
+        "limitations": {},
+        "length": 3,
+        "comment": null
+      },
+      {
+        "name": "overdue_time",
+        "type": "TINYINT",
+        "limitations": {},
+        "length": 3,
+        "comment": null
+      },
+      {
+        "name": "own_organization_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "set_organization_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "start_time",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "expired_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "busi_plan_pregnan",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "organization_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "zone_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "start_year",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "total_population",
+        "type": "INTEGER",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "pre_year_rural_births",
+        "type": "INTEGER",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "pre_year_urban_births",
+        "type": "INTEGER",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "rural_couples",
+        "type": "INTEGER",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "rural_numbers",
+        "type": "INTEGER",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "urban_couples",
+        "type": "INTEGER",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "urban_numbers",
+        "type": "INTEGER",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "report_status",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "report_user_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "report_time",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "dict_exam_item",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "item_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "item_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "item_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 4,
+        "comment": null
+      },
+      {
+        "name": "three_five_category",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 4,
+        "comment": null
+      },
+      {
+        "name": "is_classify",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "active_obj_style",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "activeObj_type_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 100,
+        "comment": null
+      },
+      {
+        "name": "item_script",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2000,
+        "comment": null
+      },
+      {
+        "name": "allow_min",
+        "type": "DECIMAL",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "allow_max",
+        "type": "DECIMAL",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "is_enable",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "start_time",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "gender",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "dict_exam_range",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "own_organization_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "set_organization_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "scope_method",
+        "type": "TINYINT",
+        "limitations": {},
+        "length": 3,
+        "comment": null
+      },
+      {
+        "name": "item_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "item_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "gender",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "description",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2000,
+        "comment": null
+      },
+      {
+        "name": "exam_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 4,
+        "comment": null
+      },
+      {
+        "name": "detect_method",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 4,
+        "comment": null
+      },
+      {
+        "name": "other_detect_method",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 255,
+        "comment": null
+      },
+      {
+        "name": "reagent",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "kit_band",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "equip_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "equip_firm",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "min_value",
+        "type": "DECIMAL",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "max_value",
+        "type": "DECIMAL",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "unit",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "value_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_enable",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "start_time",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "expired_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "dict_exam_setting",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "own_organization_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "set_organization_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "item_codes_male",
+        "type": "LONGVARCHAR",
+        "limitations": {},
+        "length": 65535,
+        "comment": null
+      },
+      {
+        "name": "item_codes_female",
+        "type": "LONGVARCHAR",
+        "limitations": {},
+        "length": 65535,
+        "comment": null
+      },
+      {
+        "name": "type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_enable",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "expired_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "start_time",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "dict_exam_type",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "ID",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 4,
+        "comment": null
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "dict_instrument_type",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "instrument_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "unit",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "dict_zone",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "parent_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "parent_ids",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2000,
+        "comment": null
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 100,
+        "comment": null
+      },
+      {
+        "name": "code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "spell",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2000,
+        "comment": null
+      },
+      {
+        "name": "province",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "county_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "zone_tag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "is_poor_county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "is_all_cover",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "is_enable",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "enable_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "gen_scheme",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "category",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2000,
+        "comment": null
+      },
+      {
+        "name": "package_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      },
+      {
+        "name": "module_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "sub_module_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "function_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      },
+      {
+        "name": "function_name_simple",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 100,
+        "comment": null
+      },
+      {
+        "name": "function_author",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 100,
+        "comment": null
+      },
+      {
+        "name": "gen_table_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "gen_table",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "comments",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      },
+      {
+        "name": "class_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 100,
+        "comment": null
+      },
+      {
+        "name": "parent_table",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "parent_table_fk",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 100,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "gen_table_column",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "gen_table_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "comments",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      },
+      {
+        "name": "jdbc_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 100,
+        "comment": null
+      },
+      {
+        "name": "java_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      },
+      {
+        "name": "java_field",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "is_pk",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "is_null",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "is_insert",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "is_edit",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "is_list",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "is_query",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "query_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "show_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "dict_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "settings",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2000,
+        "comment": null
+      },
+      {
+        "name": "sort",
+        "type": "DECIMAL",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "gen_template",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "category",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "file_path",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "file_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "content",
+        "type": "LONGVARCHAR",
+        "limitations": {},
+        "length": 2147483647,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "stat_archive_quality",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "create_month",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 7,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "DATE",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "zone_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "conuty_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "zone_tag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_poor_county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "is_all_cover",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "org_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "org_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "org_attribute",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "data_flag",
+        "type": "CHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "create_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "alter_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "province_eva_overdue_unwrite_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "province_eva_overdue_uncomplete_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "country_eva_overdue_unwrite_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "country_eva_overdue_uncomplete_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "eva_complete_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "eva_uncomplete_cnt",
+        "type": "BIGINT",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "sys_dict",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "label",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "value",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 100,
+        "comment": null
+      },
+      {
+        "name": "type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "description",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "sort",
+        "type": "INTEGER",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "parent_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "sys_log",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "remote_addr",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 255,
+        "comment": null
+      },
+      {
+        "name": "user_agent",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 255,
+        "comment": null
+      },
+      {
+        "name": "request_uri",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 255,
+        "comment": null
+      },
+      {
+        "name": "method",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "params",
+        "type": "LONGVARCHAR",
+        "limitations": {},
+        "length": 2147483647,
+        "comment": null
+      },
+      {
+        "name": "exception",
+        "type": "LONGVARCHAR",
+        "limitations": {},
+        "length": 2147483647,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "sys_menu",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "parent_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "parent_ids",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2000,
+        "comment": null
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "sort",
+        "type": "INTEGER",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "href",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "target",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "icon",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "is_show",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "permission",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "sys_role",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "enname",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "role_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "role_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "data_scope",
+        "type": "TINYINT",
+        "limitations": {},
+        "length": 3,
+        "comment": null
+      },
+      {
+        "name": "is_sys",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "useable",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "sys_role_menu",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "role_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "menu_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "sys_user",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "login_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 64,
+        "comment": null
+      },
+      {
+        "name": "password",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 100,
+        "comment": null
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "email",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "phone",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "mobile",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "user_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "photo",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1000,
+        "comment": null
+      },
+      {
+        "name": "login_ip",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 100,
+        "comment": null
+      },
+      {
+        "name": "login_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "org_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "login_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "token",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "sys_user_role",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "user_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "role_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "um_organization",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "parent_id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "parent_ids",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2000,
+        "comment": null
+      },
+      {
+        "name": "code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "org_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "service_org_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "hospital_level",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "hospital_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "address",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 255,
+        "comment": null
+      },
+      {
+        "name": "contact_person",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "contact_phone",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "own_zone_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "zone_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "province_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "city_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "county",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "county_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town_code",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "town",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "is_enable",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "enable_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "resource",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  },
+  {
+    "name": "um_user",
+    "domain": "jgxt_base",
+    "version": null,
+    "elements": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "login_name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 200,
+        "comment": null
+      },
+      {
+        "name": "enable_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "login_num",
+        "type": "INTEGER",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "login_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "login_ip",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "pwd_last_settime",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "pwd_expired_time",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "is_reset_pwd",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "certificate_type",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "certificate_no",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "gender",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "birthday",
+        "type": "DATE",
+        "limitations": {},
+        "length": 10,
+        "comment": null
+      },
+      {
+        "name": "educate_grade",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "position_title",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2,
+        "comment": null
+      },
+      {
+        "name": "telephone",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "mobile_phone",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "email",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "wechat",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "qq",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "department",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 50,
+        "comment": null
+      },
+      {
+        "name": "address",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 2000,
+        "comment": null
+      },
+      {
+        "name": "create_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "create_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "update_by",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 32,
+        "comment": null
+      },
+      {
+        "name": "update_date",
+        "type": "TIMESTAMP",
+        "limitations": {},
+        "length": 19,
+        "comment": null
+      },
+      {
+        "name": "del_flag",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 1,
+        "comment": null
+      },
+      {
+        "name": "remarks",
+        "type": "VARCHAR",
+        "limitations": {},
+        "length": 500,
+        "comment": null
+      }
+    ],
+    "properties": {}
+  }
+]

@@ -1,0 +1,9 @@
+databases:
+  jgxt_base:
+    type: MYSQL
+    driver: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.100.1.100:3306/jgxt_base?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useSSL=true
+    user: dev
+    password: Dev@bjtuling@com
+spark:
+  rddSize: 100000

@@ -1,0 +1,102 @@
+{
+  "name": "ods_archive",
+  "domain": null,
+  "version": null,
+  "elements": [
+    {
+      "name": "create_date",
+      "type": "DATE",
+      "limitations": {},
+      "length": 0,
+      "comment": "建档时间时间维度的log_date"
+    },
+    {
+      "name": "zone_id",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 0,
+      "comment": "服务机构对应区划id"
+    },
+    {
+      "name": "service_org_id",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 0,
+      "comment": "服务机构id区划机构维id"
+    },
+    {
+      "name": "assit_org_id",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 0,
+      "comment": "协作机构id区划机构维id"
+    },
+    {
+      "name": "followup_org_id",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 0,
+      "comment": "随访机构id区划机构维id"
+    },
+    {
+      "name": "followup_zone_id",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 0,
+      "comment": "随访区划维id"
+    },
+    {
+      "name": "data_flag",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 0,
+      "comment": "数据标识"
+    },
+    {
+      "name": "id",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 0,
+      "comment": "档案id"
+    },
+    {
+      "name": "archive_code",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 0,
+      "comment": "档案编号"
+    },
+    {
+      "name": "dim_archive_info_id",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 0,
+      "comment": "档案信息维度id"
+    },
+    {
+      "name": "alter_date",
+      "type": "DATE",
+      "limitations": {},
+      "length": 0,
+      "comment": "最后修改时间时间维度log_date"
+    },
+    {
+      "name": "update_date",
+      "type": "DATE",
+      "limitations": {},
+      "length": 0,
+      "comment": "最后更新时间时间维度log_date"
+    },
+    {
+      "name": "del_flag",
+      "type": "VARCHAR",
+      "limitations": {},
+      "length": 0,
+      "comment": "是否删除"
+    }
+  ],
+  "properties": {
+    "PARTITION_BY": "province,create_date",
+    "FILE_FORMAT": "parquet"
+  }
+}

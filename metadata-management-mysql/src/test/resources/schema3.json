@@ -1,6 +1,6 @@
 {
   "name": "stat_archive_quality",
-  "domain": null,
+  "domain": "jgxt_base",
   "version": null,
   "elements": [
     {

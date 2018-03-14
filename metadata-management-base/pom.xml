@@ -4,7 +4,7 @@
     <parent>
         <groupId>cn.maxinyue</groupId>
         <artifactId>metadata-management</artifactId>
-        <version>0.0.9-SNAPSHOT</version>
+        <version>0.1.0</version>
     </parent>
     <artifactId>metadata-management-base</artifactId>
     <name>metadata-management-base</name>

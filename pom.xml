@@ -27,7 +27,7 @@
         <java.version>1.8</java.version>
         <reflections.version>0.9.11</reflections.version>
         <guava.version>20.0</guava.version>
-        <config.version>0.1.3</config.version>
+        <config.version>0.1.4</config.version>
     </properties>
     <modules>
         <module>metadata-management-base</module>
